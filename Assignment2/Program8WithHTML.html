@@ -1,0 +1,39 @@
+<!-- Program 8- Write a program that creates the below Object.
+	Object name - Student
+	Property 
+		Name
+		College Name
+		Location
+		PinCode
+		Teachers details should be teacherName, teacherPhone, teacherSubjects
+
+	Print Student name, teacherName on console.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating an object</title>
+    </head>
+
+    <body>
+        <h1>Object</h1>
+
+        <script>
+            let Student = {
+                studentName: "John",
+                CollegeName: "Chitkara University",
+                Location: "Mohali",
+                Pincode: 173212,
+                Teacher: {
+                    teacherName: "Rubina",
+                    teacherPhone: 01234567,
+                    teacherSubject:  "Programming"
+                }
+            }
+
+            document.write(`Student's name is: ${Student.studentName} <br/>`);
+            document.write(`Teacher's name is: ${Student.Teacher.teacherName}`);
+        </script>
+    </body>
+</html>
