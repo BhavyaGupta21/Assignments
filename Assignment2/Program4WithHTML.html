@@ -1,0 +1,35 @@
+<!-- Program 4- Write a function that accepts interest, principle, and tenure and calculates EMI.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMI Calculation</title>
+    </head>
+
+    <body>
+        <h1>EMI Calculation</h1>
+
+        <script>
+
+            function emiCalculator(p, r, t) {
+                let emi;
+
+                r = r / (12 * 100);
+                t = t * 12;
+
+                emi = (p * r * Math.pow(1 + r, t)) / (Math.pow(1 + r, t) - 1);
+
+                return emi;
+            }
+            let principleAmt, rate, time, emi;
+            principleAmt = 10000;
+            rate = 10;
+            time = 2;
+
+            emi = emiCalculator(principleAmt, rate, time);
+
+            document.write("Monthly EMI is: " + emi);
+
+        </script>
+    </body>
+</html>
