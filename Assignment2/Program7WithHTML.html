@@ -1,0 +1,31 @@
+<!-- Program 7- Create an array of length 5 and store below numbers: 1,11,111,222,555 . Write a program to calculate the average of numbers. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Average of numbers</title>
+    </head>
+
+    <body>
+        <h1>
+            Average of numbers
+        </h1>
+
+        <script>
+            let arr = [1, 11, 111, 222, 555]
+
+            let sum, avg, len;
+
+            sum = 0;
+            len = arr.length;
+
+            for(let i = 0; i < len; i++) {
+                sum = sum + arr[i];
+            }
+
+            avg = sum / len;
+
+            document.write(`Average of the given array ${arr} is: ${avg}`);
+        </script>
+    </body>
+</html>
