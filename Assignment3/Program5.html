@@ -1,0 +1,51 @@
+<!-- Program 5- Write the program which will set new course information
+
+Write the same program as discussed in program 3 but this program will have setter method which can set course details.
+
+Now use getter and setter method to get and set the course information. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Course Information</title>
+    </head>
+
+    <body>
+        <h1>Display Course Information</h1>
+
+        <script>
+            class Courses {
+
+                constructor(courseName, price, validity, trainerName, phoneNumber) {
+                    this.courseName = courseName;
+                    this.price = price;
+                    this.validity = validity;
+                    this.trainerName = trainerName;
+                    this.phoneNumber = phoneNumber;
+                }
+
+                get showDetails() {
+                    return `Thank you for showing interest in ${this.courseName} - Current Price is ${this.price} and validity of course is till ${this.validity}. If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNumber}.<br>Course Details are: ${this.courseDetails}<br><br>`;
+                }
+                
+                set courseInfo(courseDetails) {
+                    this.courseDetails = courseDetails;
+                }
+            }
+
+            let c1 = new Courses("Learn JS", "4000", "2 years", "Rahul", "90909090");
+            c1.courseInfo = "Learn JS from basic to advance.";
+            document.write(c1.showDetails);
+
+            let c2 = new Courses("Learn Cypress", "5000", "1 year", "Bhavya", "7687600");
+            c2.courseInfo = "Learn Cypress from basic to advance.";
+            document.write(c2.showDetails);
+
+            let c3 = new Courses("Learn Playwright", "6000", "3 years", "Parul", "009900990");
+            c3.courseInfo = "Learn Playwright from basic to advance.";
+            document.write(c3.showDetails);
+            
+
+        </script>
+    </body>
+</html>
