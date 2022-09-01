@@ -40,8 +40,7 @@ Create 3 courses object and call showDetails method. -->
                 }
 
                 showDetails() {
-                    document.getElementById("info1").innerHTML = `Thank you for showing interest in ${this.courseName} - Current Price is ${this.price}” and validity of course is till ${this.validity}. If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNumber}.`;
-                    // console.log(courseName + " " + price);
+                    document.write(`Thank you for showing interest in ${this.courseName} - Current Price is ${this.price} and validity of course is till ${this.validity}. If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNumber}.<br><br>`);
                 }
             }
 
