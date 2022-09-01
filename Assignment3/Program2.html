@@ -1,0 +1,51 @@
+<!-- Program 2- Marriage Eligible Calculator 
+
+Ask the user to enter age, if the age is <21 then throw a custom exception with the message “Have some patience” and handle the exception. Print the same message in the alert box and ask for age again.
+The program will keep asking until the person is eligible. 
+
+If the user is eligible then display an alert with message “Eligible” and stop the program -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marriage Eligible Calculator</title>
+    </head>
+
+    <body>
+        <h1>Marriage Eligible Calculator</h1>
+        <h2 id="age"></h2>
+
+        <script>
+            let age = 0;
+            let flag = false;
+
+            while(age < 21) {
+                age = prompt("Enter your age");
+                while(isNaN(age)) {
+                    alert("Please enter you age");
+                    age = prompt("Enter your age");
+                }
+
+                function checkAge(a) {
+                    if(age < 21) {
+                        throw "Have some patience";
+                    }
+                }
+
+                try {
+                    checkAge(age);
+                } catch(err) {
+                    alert("Have some patience");
+                }
+                
+                
+                while(isNaN(age)) {
+                    alert("Please enter you age");
+                    age = prompt("Enter your age");
+                }
+            }
+
+            document.write("Eligible");
+        </script>
+    </body>
+</html>
