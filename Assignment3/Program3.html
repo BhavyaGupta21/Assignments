@@ -1,0 +1,60 @@
+<!-- Program 3- Display Course Information
+Create a class called Courses
+Add below property
+	CourseName
+	Price
+	Validity
+	TrainerName
+	PhoneNumber
+
+Create method showDetails which will return string in below format
+
+“Thank you for showing interest in Course Name - Current Price is  “Price” and validity of course is till  “Validity” If you have any query then reach out to “TrainerName” mobile - “PhoneNumber””
+
+Above message will replace with actual values 
+
+Create 3 courses object and call showDetails method. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Course Information</title>
+    </head>
+
+    <body>
+        <h1>Display Course Information</h1>
+
+        <h2 id="info1"></h2>
+        <h2 id="info2"></h2>
+        <h2 id="info3"></h2>
+
+        <script>
+            class Courses {
+
+                constructor(courseName, price, validity, trainerName, phoneNumber) {
+                    this.courseName = courseName;
+                    this.price = price;
+                    this.validity = validity;
+                    this.trainerName = trainerName;
+                    this.phoneNumber = phoneNumber;
+                }
+
+                showDetails() {
+                    document.getElementById("info1").innerHTML = `Thank you for showing interest in ${this.courseName} - Current Price is ${this.price}” and validity of course is till ${this.validity}. If you have any query then reach out to ${this.trainerName} mobile - ${this.phoneNumber}.`;
+                    // console.log(courseName + " " + price);
+                }
+            }
+
+            let c1 = new Courses("Learn JS", "4000", "2 years", "Rahul", "90909090");
+            c1.showDetails();
+
+            let c2 = new Courses("Learn Cypress", "5000", "1 year", "Bhavya", "7687600");
+            c2.showDetails();
+
+            let c3 = new Courses("Learn Playwright", "6000", "3 years", "Parul", "009900990");
+            c3.showDetails();
+            
+
+        </script>
+    </body>
+</html>
