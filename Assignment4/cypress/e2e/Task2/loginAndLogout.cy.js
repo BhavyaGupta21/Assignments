@@ -1,3 +1,15 @@
+// Task 2 – Login and Logout 
+// Open https://ineuron-courses.vercel.app/login
+
+// Enter username as  ineuron@ineuron.ai
+// Enter password as ineuron
+// Click on login button
+// Verify welcome message 
+// Note- Message will fade away in 10 seconds
+
+// Click on Logout
+// Verify user is logged out
+
 describe('Login And Logout', () => {
     
     it('Verify login and logout functionality', () => {

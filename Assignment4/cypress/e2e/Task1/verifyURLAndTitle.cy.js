@@ -1,3 +1,9 @@
+// Task 1 – Verify URL and title
+// Open https://ineuron-courses.vercel.app/login
+
+// Verify title contains Courses 
+// Verify url contains login
+
 describe('Verify URL and Title Test', () => {
     
     it('Verify title and URL of the application', () => {
