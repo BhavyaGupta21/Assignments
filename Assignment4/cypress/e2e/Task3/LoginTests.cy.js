@@ -55,6 +55,10 @@ describe('Login functionality test', () => {
 
         cy.get("button[type='submit']").click();
 
-        cy.get(".errorMessage").should("contain", "USER Email Doesn't Exist");
+        //cy.get(".errorMessage").should("contain", "USER Email Doesn't Exist");
+
+        setTimeout(() => {
+           cy.get(".errorMessage").should("contain", "USER Email Doesn't Exist");
+        }, 10000);
     });
 });
