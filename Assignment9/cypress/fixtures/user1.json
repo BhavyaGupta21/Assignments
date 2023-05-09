@@ -1,0 +1,8 @@
+{
+    "name": "User1",
+    "email": "user1@user.user",
+    "password": "user1@123",
+    "interest": "testing",
+    "gender": "Male",
+    "state": "Assam"
+}

@@ -1,0 +1,12 @@
+{
+    "username": "ineuron@ineuron.ai",
+    "password": "ineuron",
+    "courseName": "Testing",
+    "courseDescription": "New Testing Course",
+    "price": "200",
+    "category": "Testing",
+    "instructor": "INSTRUCTOR",
+    "startDate": "24",
+    "endDate": "24",
+    "errorMessage": "Please select a thumbnail!"
+}
